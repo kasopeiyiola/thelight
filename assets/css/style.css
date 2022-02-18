@@ -259,11 +259,19 @@ button, input, textarea:focus {
 .atf-section-padding {
 	padding: 90px 0;
 }
+.atf-section-padding h3{
+	color:red;}
+.atf-section-padding p{
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	font-size: 16px;
+}
+
 
 /*START SECTION TITLE DESIGN*/
 
 .atf-section-title {
 	margin-bottom: 50px;
+	border-radius: 5px;
 }
 .atf-section-title h5 {
 	color: var(--thm-white);
@@ -273,7 +281,7 @@ button, input, textarea:focus {
 	font-family: var(--thm-font);
 	letter-spacing: 1px;
 	font-size: 14px;
-	background: var(--thm-color);
+	background-color:red;
 	display: inline-block;
 	padding: 2px 10px;
 	border-radius: 5px;
@@ -282,13 +290,16 @@ button, input, textarea:focus {
 	font-weight: 400;
 	font-size: 35px;
 	line-height: 1.3;
-	color: var(--thm-black);
+	color: rgb(202, 45, 45);
 	text-transform: capitalize;
 	font-family: var(--thm-font2);
 }
+.atf-section-title h3 {
+	color: var(--thm-p); 
+}
 .atf-section-title p {
-	font-size: 14px;
-	font-family: var(--thm-font);
+	font-size: 16px;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 	color: var(--thm-p);
 	font-weight: 400;
 	line-height: 28px;
@@ -320,9 +331,18 @@ button, input, textarea:focus {
 	margin-top: 10px;
 	color: var(--thm-color);
 }
+.atf-section-title.text-center{
+	color:red;
+}
 
 @media only screen and (max-width:480px) { 
 	.atf-section-title  h2  {font-size:25px;}
+}
+.atf-about-list h3{
+	color:red;
+	}
+.atf-about-list li{
+	color: var(--thm-p);
 }
 /*END SECTION TITLE DESIGN*/
 
@@ -342,14 +362,14 @@ button, input, textarea:focus {
 	font-size: 25px;
 	width: 50px;
 	height: 50px;
-	background: var(--thm-color);
+	background: yellow;
 	line-height: 50px;
 	color: var(--thm-white);
 	border-radius: 50%;
 	box-shadow: 0px 0 15px rgba(242, 233, 233, 0.6);
 }
 .atf-scrollup-icon:hover {
-	background: var(--thm-black);
+	background: red;
 	transition: 0.3s;
 }
 .atf-scroll-top.open {
@@ -413,6 +433,7 @@ button, input, textarea:focus {
     display: block;
     position: relative;
     z-index: 1;
+	background-color: rgb(202, 45, 45);
 }
 .atf-themes-btn:hover:before,
 .atf-themes-btn:hover:after,
@@ -456,9 +477,13 @@ button, input, textarea:focus {
 * ----------------------------------------------------------------------------------------
 */
 .atf-top-header {
-	background-color: var(--thm-colors);
+	background-color:rgb(202, 45, 45);
 	overflow: hidden;
-	padding-bottom: 1.5px;
+	padding-bottom: 3.0px;
+	padding: 10px;
+	border-radius: 5px;
+	
+
 }
 .atf-top-header .atf-top-header-in {
 	height: 40px;
@@ -469,22 +494,22 @@ button, input, textarea:focus {
 	transition: all 0.4s ease;
 }
 .atf-top-header  .atf-top-social {
-	font-size: 16px;
+	font-size: 14px;
 	height: 40px;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: flex-end;
 	align-items: center;
 	transition: all 0.4s ease;
-	color: var(--thm-white);
+	color: rgb(78, 170, 78);
 	text-align: center;
 }
 .atf-top-social a i:hover{
 	color:var(--thm-white);
 }
 .atf-top-social a i {
-	margin-left: 15px;
-	color: rgba(255, 255, 255, 0.8);
+	margin-left: 5px;
+	color: green;
 }
 .atf-sticky-active .atf-top-header-in  {
 	height: 0; 
@@ -501,7 +526,7 @@ button, input, textarea:focus {
 }
 .atf-top-header-list li {
 	margin-right: 30px;
-	color: rgba(255, 255, 255, 0.8);
+	color:white;
 	font-size: 14px; 
 }
 .atf-top-header-list li:last-child {
@@ -534,8 +559,11 @@ button, input, textarea:focus {
 
 @media screen and (max-width: 991px) {
   .atf-main-header .container {
-    max-width: 100%; }
-
+    max-width: 100%;
+	
+	
+ }
+  
   .atf-top-header {
     display: block; }
 
@@ -550,12 +578,18 @@ button, input, textarea:focus {
 	font-size:14px;
 }
 .atf-main-header {
-  position: relative; }
+  position: relative; 
+  
+  
+  
+}
+
 
 @media screen and (min-width: 992px) {
 	.atf-nav .atf-nav-list {
 		display: flex !important;
 		flex-wrap: wrap; 
+
 	}
 		
 	.atf-nav .atf-nav-list > li {
@@ -834,7 +868,9 @@ button, input, textarea:focus {
 	animation: 1.5s .7s fadeInUp both; }
 .slider-active .atf-hero-btn{
 	-webkit-animation: 1.5s 1s fadeInUp both;
-	animation: 1.5s 1s fadeInUp both; }
+	animation: 1.5s 1s fadeInUp both;
+	;
+ }
   
 @media only screen and (max-width:480px) { 
 	.atf-single-text h1{font-size:40px;}
@@ -1181,7 +1217,7 @@ canvas.sketch{
 }
 .atf-feature-text h3 {
 	padding: 15px 0 10px 0;
-	color: var(--thm-black);
+	background-color: rgb(202, 45, 45);;
 }
 .atf-feature-content:hover h3 {
 	color: var(--thm-color);
@@ -1230,9 +1266,11 @@ canvas.sketch{
 */
 #best-service{
 	position:relative;
+	background-color: rgb(219, 219, 41);
 }
 .atf-best-single-service {
 	position:relative;
+	
 }
 .atf-best-service-number {
 	position: absolute;
@@ -1245,7 +1283,7 @@ canvas.sketch{
 	left: 50%;
 }
 .atf-best-service-text h3 {
-	color: var(--thm-color);
+	color: red;
 	letter-spacing: 1px;
 }
 .atf-best-service-content:hover .atf-best-service-number {
@@ -1255,6 +1293,7 @@ canvas.sketch{
 }
 .atf-best-service-content{
 	position:relative;
+	
 }
 .atf-best-service-content:hover {
 	box-shadow: initial;
@@ -1267,7 +1306,7 @@ canvas.sketch{
 	bottom: 0;
 	width: 100%;
 	height: 6px;
-	background: var(--thm-color);
+	
 }
 .atf-best-service-content:after {
 	content: "";
@@ -1291,10 +1330,10 @@ canvas.sketch{
 	background: var(--thm-base);
 }
 .atf-best-single-service {
-	border: none;
-	border-radius: 0px;
+
+	border-radius: 15px;
 	padding: 30px 15px;
-	box-shadow: 0 0 15px rgba(0,0,0,0.1);
+	
 	background-color: var(--thm-white);
 	z-index: 1;
 }
@@ -1328,7 +1367,7 @@ canvas.sketch{
 * 07.START PROGRAM  DESIGN
 * ----------------------------------------------------------------------------------------
 */
-#class{background: var(--thm-color);}
+#class{background: rgb(202, 45, 45);}
 #class .atf-section-title h5 {
 	background: var(--thm-white);
 	color: var(--thm-black) !important;
@@ -1503,7 +1542,7 @@ canvas.sketch{
 	font-size: 18px;
 	font-weight: 400;
 	letter-spacing: 1px;
-	color: var(--thm-color);
+	color: rgb(219, 219, 41);
 	border-radius: 0;
 	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1), 0 0 40px rgba(0, 0, 0, 0.1) inset;
 	position: relative;
@@ -2803,12 +2842,12 @@ END BLOG DETAILS DESIGN
 	text-align: center;
 	margin: 0px 0 25px;
 	border-radius: 10%;
-	background: var(--thm-color);
+	background: rgb(219, 219, 41);;
 	float: left;
 	margin-right: 25px;
 }
 .atf-contact-details h4 {
-	color: var(--thm-black);
+	color: rgb(202, 45, 45);
 	font-size: 20px;
 	line-height: 16px;
 }
@@ -2889,7 +2928,7 @@ END BLOG DETAILS DESIGN
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background: var(--thm-colors);
+	background: rgb(219, 219, 41);
 	border-radius: 50% 50% 0% 0%/100% 100% 0% 0%;
 	transform: scaleX(2.1);
 	z-index: -1;
@@ -2950,11 +2989,16 @@ END BLOG DETAILS DESIGN
 }
 .atf-footer-boottom {
 	padding: 35px 0;
-	background: rgba(0,0,0, 0.4);
+	background: rgb(202, 45, 45);
 }
+.atf-footer-box h5{
+	color:red;
+}
+
 .atf-footer-box p {
     color: var(--thm-white);
     margin-bottom: 20px;
+	
 }
 .atf-footer-box strong{
 	font-weight:700;
@@ -3000,7 +3044,7 @@ END BLOG DETAILS DESIGN
 .atf-footer-link h5 {
 	margin-bottom: 35px;
 	font-size: 22px;
-	color: var(--thm-white);
+	color: rgb(202, 45, 45);
 }
 .atf-footer-link .atf-list-menu li a {
 	color: var(--thm-f3);
